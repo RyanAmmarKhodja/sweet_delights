@@ -1,0 +1,42 @@
+.banner{
+    height: 30vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../images/counter-clear.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-0{
+    background-color: #2C2C2C;
+    height: 65vh;
+}
+
+.bg-0 h1{
+    text-align: center;
+}
+
+.bg-0 h5{
+    text-align: left;
+}
+
+.bg-1{
+    background-image: url("../images/bakery.jpg");
+    background-size: cover;
+}
+
+.bg-2{
+    background-image: url("../images/team.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sideBlock{
+    background-color: #2C2C2C;
+}
+
+.bg-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../images/counter.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}

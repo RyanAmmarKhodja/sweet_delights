@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/productManagement.js"></script>
+    
+
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand regular" style="color: #FFF8DC;" href="#">Sweet Delights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pe-3">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="customOrder.html">Custom cakes</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="pt-5 ">
+
+
+        <h1 class="silk medium playwrite" style="text-align: center;">Add a product</h1>
+        <form id="addProduct">
+
+            <div class="mb-3">
+                <label for="iname" class="form-label">Name</label>
+                <input type="text" class="form-control" id="iname" placeholder="Product name">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" placeholder="Price">
+            </div>
+            
+            <div class="mb-3">
+                <label for="category" class="form-label">Image</label>
+                <input type="file" id="imageInput" accept="image/*" required>
+                <label for="category" class="form-label">Category</label>
+                
+
+                <select name="category" id="category">
+                    <option value="breads">Breads</option>
+                    <option value="pastry">Pastry</option>
+                    <option value="cakes">Cakes</option>
+                </select>
+            </div>
+
+            <!-- <div class="mb-3">
+                <label for="image" class="form-label">image</label>
+                <input type="file" class="form-control" id="image" placeholder="Object">
+            </div> -->
+
+            <div class="col-auto" style="text-align: center;">
+                <button type="submit" class="btn btn-silk mb-3">Add item</button>
+            </div>
+        </form>
+
+
+    </section>
+
+
+    <section>
+        <h2 class="silk" style="text-align: center;">Available Products</h2>
+
+        <div id="inventory" class="card-container">
+            
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
