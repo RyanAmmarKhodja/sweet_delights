@@ -1,15 +1,15 @@
-const { Client } = require('pg');
+require('dotenv').config();
+const { Pool } = require('pg');
 
-const client = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'sweet_delights',
-    password: 'postgre',
-    port: 5432, // Default PostgreSQL port
+if (!process.env.DATABASE_URL) {
+    throw new Error("DATABASE_URL is not defined in the .env file");
+}
+
+const pool = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: process.env.DATABASE_URL.includes("railway.app")
+        ? false // Disable SSL for Railway
+        : { rejectUnauthorized: false } // Keep for other cloud providers
 });
 
-client.connect()
-    .then(() => console.log('Connected to PostgreSQL'))
-    .catch(err => console.error('Connection error', err.stack));
-
-module.exports = client;
+module.exports = pool;
