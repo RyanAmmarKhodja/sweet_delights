@@ -12,16 +12,6 @@ app.use(express.json());
 app.use(router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/test-db', async (req, res) => {
-    try {
-        const result = await db.query('SELECT NOW()'); // Simple query
-        res.json({ message: 'Database connected!', time: result.rows[0] });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Database connection failed' });
-    }
-});
-
 
 // Start the server
 app.listen(PORT, () => {

@@ -24,7 +24,11 @@ section{
 }
 
 .silk {
-    color: #FFF8DC;
+    color: #F8E9D2;
+}
+
+.gray {
+    background-color: #2E2E2E ;
 }
 
 .semi-bold{
@@ -38,17 +42,17 @@ section{
     font-weight: 300;
 }
 
-.playwrite{
+/* .playwrite{
     font-family: Roboto,helvetica,arial,sans-serif;
-}
+} */
 
 .cinzel{
     font-family: "Cinzel";
 }
-
+/* 
 .playfair{
     font-family: "Playfair Display";
-}
+} */
 footer{
     background-color: #1E1E1E;
     display: flex;
