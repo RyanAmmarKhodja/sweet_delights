@@ -3,24 +3,26 @@ migrate the database
 
 mobile responsiveness
 secure admin login
-orders management
 products management
 admin Dashboard
 
 In order to enhance UX/UI:
 add search bar
-add latest trends / popular products
+add latest trends carousel/ popular products
+
 optimize image loading times/compress images
+update header elements using React
+    -remove custom cake
+    -about us will lead to #who_we_are
+    
+add animations
 
-Aesthetic:
+
+About us page add border --done
+Redesign menu  --done
 remove carousel  --done
-Redesign menu
-make menu float on a background image?
-About us page add border
-
-
-Highlight Images on menu items/ bigger cards bigger images
-$0.25 
 update silk to #F8E9D2  --done
 Improve contrast: a lighter gray theme  --done
-add animations
+Highlight Images on menu items/ bigger cards bigger images + border on images --done
+$0.25 --done
+padding left to index image  --done
