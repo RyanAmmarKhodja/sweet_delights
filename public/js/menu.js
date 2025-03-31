@@ -8,12 +8,11 @@ $(document).ready(() => {
             data.data.forEach(product => {
                 $(`#${product.category}`).append(`
                     
-
                 <div class="card-menu">
-                    <img src="${product.imageUrl}" alt="${product.name}" style="width:100%;padding: 1em;">
-                    <div class="cinzel" style="padding: 2px 16px; text-align: center;">
+                    <img src="${product.imageUrl}" alt="${product.name}">
+                    <div class="alegreya">
                         <P>${product.name}</P>
-                        <p>${product.price}$</p>
+                        <p>$${product.price}</p>
                     </div>
                 </div>
             `);
